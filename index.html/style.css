@@ -1,0 +1,107 @@
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(45deg, #ffffff, #ffffff); /* Gradiente de fundo */
+}
+
+/* Container com bordas arredondadas, sombra suave e fundo preto */
+.container {
+    background-color: #bf04f8;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(204, 0, 255, 0.2);
+    max-width: 800px;
+    width: 90%;
+    border: 2px solid red;
+    position: relative;
+}
+
+/* Título principal "Eu Te Amo" */
+.titulo {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px #02fa699f;
+}
+
+/* Título secundário "Eu Te Amo" na parte de baixo */
+.titulo2 {
+    font-size: 3em;
+    margin-top: 30px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(144, 250, 4, 0.5);
+}
+
+/* Corpos de corações com animação */
+.coracoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Estilo dos corações */
+.coracao {
+    font-size: 2.5em;
+    color: red;
+    animation: pulsar 1.5s infinite ease-in-out;
+}
+
+/* Diferentes posições para os corações de cima e de baixo */
+.coracao-topo {
+    animation-delay: 0.5s;
+}
+
+.coracao-baixo {
+    animation-delay: 1s;
+}
+
+/* Efeito de pulsação para os corações */
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilo da mensagem */
+.mensagem p {
+    font-size: 1.4em;
+    line-height: 1.7;
+    margin: 15px 0;
+    color: red;
+    font-family: 'Verdana', sans-serif;
+    text-align: justify;
+    text-shadow: 1px 1px 4px rgba(255, 0, 0, 0.3);
+}
+
+/* Adicionando um contorno delicado ao texto da mensagem */
+.mensagem p::before {
+    content: "💖";
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.mensagem p::after {
+    content: "💖";
+    font-size: 1.5em;
+    margin-left: 5px;
+}
